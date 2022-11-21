@@ -61,12 +61,15 @@
 
 ```javascript
   // package.json
-
   {
     "name": "project",
     "graphdoc": {
+      "title": "Graphdoc", // Custom title  (optional)
       "endpoint": "http://localhost:8080/graphql",
+      "template": "./template/slds", // Path to your template (optional)
       "output": "./doc/schema",
+      "graphiql": "http://localhost:8080/graphql", // GraphiQL URL (optional)
+      "ga": "UA-XXXXXXXX-X", // Google Analytics UA Number (optional)
     }
   }
 ```
